@@ -41,7 +41,7 @@ def style_base_layout():
 
             /* Hide Top Bar of streamlit*/
             #MainMenu, header, footer {
-                visibility: hidden;
+                visibility: hidden; 
             }
             
             .block-container {
@@ -58,15 +58,18 @@ def style_base_layout():
             }
 
             h2 {
+                color: black !important;
                 font-family: 'Montserrat' !important;
                 font-size: 2rem !important;
-                font-weight: 760 !important;
+                font-weight: 900 !important;
                 line-height: 1.1!important;
                 margin-bottom: 0rem !important;
             }
             
             h3, h4, p{
+                color: black !important;
                 font-family: 'Roboto' !important;
+                font-weight: 500px;
             }
             
             
@@ -90,7 +93,7 @@ def style_base_layout():
             button[kind="tertiary"] {
                 background-color: black !important;
                 border-radius: 1.5rem !important;
-                color: white !important;
+                color: black !important;
                 padding: 10px 20px !important;
                 border: none !important;
                 tranisition: transform 0.25s ease-in-out !important;
