@@ -7,8 +7,6 @@ import streamlit as st
 from src.database.db import get_all_students
 
 
-
-
 @st.cache_resource
 def load_dlib_models():
     detector = dlib.get_frontal_face_detector()
@@ -108,4 +106,4 @@ def predict_attendance(class_image_np):
         if best_match_score <= resemblance_threshold:
             detected_student[predicted_id] = True
     
-    return detected_student, all_students, len(encoding)
+    return detected_student, all_students, len(encodings)

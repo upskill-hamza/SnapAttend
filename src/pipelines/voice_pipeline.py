@@ -1,4 +1,4 @@
-from resemblyzer import voiceEncoder, preprocess_wav
+from resemblyzer import VoiceEncoder, preprocess_wav
 import numpy as np
 import io 
 import librosa
@@ -7,7 +7,7 @@ import streamlit as st
 
 @st.cache_resource
 def load_voice_encoder():
-    return voiceEncoder()
+    return VoiceEncoder()
 
 
 def get_voice_embedding(audio_bytes):
