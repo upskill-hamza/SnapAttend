@@ -44,6 +44,10 @@ def style_base_layout():
                 visibility: hidden; 
             }
             
+            [data-testid="stToast"] {
+                color: white !important;
+            }
+            
             .block-container {
                 padding-top: 1.5rem !important;
             }
@@ -58,7 +62,7 @@ def style_base_layout():
             }
 
             h2 {
-                color: black !important;
+                color: #475569 !important;
                 font-family: 'Montserrat' !important;
                 font-size: 2rem !important;
                 font-weight: 900 !important;
@@ -66,10 +70,10 @@ def style_base_layout():
                 margin-bottom: 0rem !important;
             }
             
-            h3, h4, p{
-                color: black !important;
+            h3, h4 {
+                color: #475569 !important;
                 font-family: 'Roboto' !important;
-                font-weight: 500px;
+                font-weight: 700 !important;
             }
             
             
@@ -91,7 +95,7 @@ def style_base_layout():
             }
             
             button[kind="tertiary"] {
-                background-color: black !important;
+                background-color: #D6EAF5 !important;
                 border-radius: 1.5rem !important;
                 color: black !important;
                 padding: 10px 20px !important;
