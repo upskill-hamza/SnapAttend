@@ -76,9 +76,9 @@ def style_base_layout():
                 font-weight: 700 !important;
             }
             
-            
             button {
                 background-color: #2F80AD !important;
+                color: black !important;
                 border-radius: 1.5rem !important;
                 color: white !important;
                 padding: 10px 20px !important;
