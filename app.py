@@ -4,6 +4,9 @@ from src.screens.student_screen import student_screen
 from src.screens.home_screen import home_screen
 
 def main():
+    st.set_page_config(
+        page_title="SnapAttend - Making Attendance faster using AI",
+        page_icon="https://i.ibb.co/844D9Lrt/mascot-student.png")
     
     
     if 'login_type' not in st.session_state:
