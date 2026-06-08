@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import pandas as pd
 
 
@@ -160,7 +161,7 @@ def teacher_tab_take_attendance():
 
                     results, attendance_to_log  = [], []
 
-                    current_timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+                    current_timestamp = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%dT%H:%M:%S")
 
 
                     for node in enrolled_students:
