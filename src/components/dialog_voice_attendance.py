@@ -8,6 +8,7 @@ import pandas as pd
 
 from src.components.dialog_attendance_results import show_attendance_result
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 
 @st.dialog('Voice Attendance')
@@ -42,7 +43,7 @@ def voice_attendance_dialog(selected_subject_id):
 
             results, attendance_to_log  = [], []
 
-            current_timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+            current_timestamp = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%dT%H:%M:%S")
 
 
             for node in enrolled_students:

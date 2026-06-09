@@ -6,7 +6,7 @@ from src.screens.home_screen import home_screen
 def main():
     st.set_page_config(
         page_title="SnapAttend - Making Attendance faster using AI",
-        page_icon="https://i.ibb.co/844D9Lrt/mascot-student.png")
+        page_icon="https://i.ibb.co/XfzW10Cg/Snap-Attend.png")
     
     
     if 'login_type' not in st.session_state:
